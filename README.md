@@ -1,5 +1,4 @@
 # docker-compos
-e-laravel
 A pretty simplified Docker Compose workflow that sets up a LEMP network of containers for local Laravel development.
 
 ## Usage
@@ -83,6 +82,6 @@ Want to build for production? Simply run `docker-compose run --rm npm run build`
 
 ## MailHog
 
-The current version of Laravel (9 as of today) uses MailHog as the default application for testing email sending and general SMTP work during local development. Using the provided Docker Hub image, getting an instance set up and ready is simple and straight-forward. The service is included in the `docker-compose.yml` file, and spins up alongside the webserver and database services.
+The current version of Laravel (10 as of today) uses MailHog as the default application for testing email sending and general SMTP work during local development. Using the provided Docker Hub image, getting an instance set up and ready is simple and straight-forward. The service is included in the `docker-compose.yml` file, and spins up alongside the webserver and database services.
 
 To see the dashboard and view any emails coming through the system, visit [localhost:8025](http://localhost:8025) after running `docker-compose up -d site`.
